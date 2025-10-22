@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ระบบบันทึกเวลาทำงาน</title>
+    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app-container" class="hidden">
+        <header id="app-header">
+            <div id="header-text">
+                <h1 style="font-size: 1.5rem; font-weight: 700;">บันทึกเวลาทำงาน</h1>
+                <span id="employee-name" style="font-size: 0.875rem; margin-left: 10px;"></span>
+            </div>
+            <img src="./images/logo_full.png" alt="Phaopanya Transport Logo" style="width: 50px; height: auto; border-radius: 0;">
+        </header>
+        <main id="main-content">
+            <div id="employee-info-box" class="card hidden"></div>
+            <div id="view-container"></div>
+            <div id="history-container" class="hidden"></div>
+        </main>
+    </div>
+    <div id="loading-view">
+        <div class="spinner"></div>
+        <p id="loading-text">กำลังเริ่มต้น...</p>
+    </div>
+    
+    <script>
+        // ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+        // ★★★  กรุณาใส่ LIFF ID และ WEB APP URL ของคุณที่นี่  ★★★
+        // ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+        const LIFF_ID = '2008326721-bmkWomzv'; // ใช้ LIFF ID เดิมของผู้ใช้
+        const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzDI78tUezqDWqN_NVojQZaioS5w2kZdOWernJDK0e0G-v7Ff0fYbS7G58ZjSdTdT_mcw/exec'; // ใช้ GAS WEB APP URL เดิมของผู้ใช้
+    </script>
+    <script type="module" src="js/api.js"></script>
+    <script type="module" src="js/utils.js"></script>
+    <script type="module" src="js/views/startForm.js"></script>
+    <script type="module" src="js/views/endForm.js"></script>
+    <script type="module" src="js/views/history.js"></script>
+    <script type="module" src="js/views/summary.js"></script>
+    <script type="module" src="js/views/registrationForm.js"></script>
+    <script type="module" src="js/router.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
