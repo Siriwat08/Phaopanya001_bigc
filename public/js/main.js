@@ -6,8 +6,8 @@ import { renderHistory } from "./views/history.js";
 // ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 // ★★★  กรุณาใส่ LIFF ID และ WEB APP URL ของคุณที่นี่  ★★★
 // ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
-export const LIFF_ID = "2008326721-bmkWomzv"; // ใช้ LIFF ID เดิมของผู้ใช้
-export const GAS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzDI78tUezqDWqN_NVojQZaioS5w2kZdOWernJDK0e0G-v7Ff0fYbS7G58ZjSdTdT_mcw/exec"; // ใช้ GAS WEB APP URL เดิมของผู้ใช้
+export const LIFF_ID = "2008333976-2gW7KwAZ'"; // ใช้ LIFF ID เดิมของผู้ใช้
+export const GAS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxryjORkVpc9JEO2PqsquU87phYyo8L-ubyi8OUNnqzlTckOtaHkRiXVIHWM8X-Itw/exec"; // ใช้ GAS WEB APP URL เดิมของผู้ใช้
 
 let liffProfile = {};
 
